@@ -7,7 +7,7 @@ mkdir -p "$RIPS" &> /dev/null
 docker rm -f dvd2flac
 
 docker run \
--ti \
+-ti --rm \
 --privileged \
 -v /etc/localtime:/etc/localtime:ro \
 -v /dev/sr0:/dev/dvd \
